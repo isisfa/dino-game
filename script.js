@@ -42,7 +42,7 @@ function jump() {
 //Criar cactos
 function createCactus() {
     const cactus = document.createElement('div');
-    let cactusPosition = 800;
+    let cactusPosition = 600;
     let randomTime = Math.random() * 6000;
 
     cactus.classList.add('cactus');
@@ -53,7 +53,7 @@ function createCactus() {
         if (cactusPosition < -60) {
             clearInterval(leftInterval);
             background.removeChild(cactus)
-        } else if (cactusPosition > 0 && cactusPosition < 60) {
+        } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
             //Game over
             clearInterval(leftInterval);
             document.body.innerHTML = `<h1 class="game-over">Fim de jogo</h1>`;
