@@ -1,6 +1,6 @@
 # dino-game
 
-### Chrome dissonaur🦖 game clone  
+### Chrome Dinosaur 🦖 game clone  
 
 ### Tools and Technologies: HTML, CSS and Javascript.
 
