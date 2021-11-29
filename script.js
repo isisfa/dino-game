@@ -45,6 +45,8 @@ function createCactus() {
     let cactusPosition = 600;
     let randomTime = Math.random() * 6000;
 
+    console.log(randomTime)
+
     cactus.classList.add('cactus');
     cactus.style.left = cactusPosition + 'px';
     background.appendChild(cactus);
@@ -56,14 +58,15 @@ function createCactus() {
         } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
             //Game over
             clearInterval(leftInterval);
-            document.body.innerHTML = `<h1 class="game-over">Fim de jogo</h1>`;
+            document.body.innerHTML = `<h1 class="game-over">Game Over</h1>`;
+            clearTimeout(newCactus);
         } else {
             cactusPosition -= 10;
             cactus.style.left = cactusPosition + 'px';
         }
     }, 20);
 
-    setTimeout(createCactus, randomTime);
+    newCactus = setTimeout(createCactus, randomTime);
 }
 
 createCactus();

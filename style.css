@@ -1,8 +1,12 @@
+.body {
+ background-color: #bebebe;
+}
+
 .dino {
     position: absolute;
     width: 60px;
     height: 60px;
-    background-color: green;
+    background-image: url(./images/dino.png);
     bottom: 0;
 }
 
@@ -11,5 +15,13 @@
     width: 60px;
     height: 60px;
     bottom: 0;
-    background-color: red;
+    background-image: url(./images/cactus.png);
+}
+
+.game-over {
+    text-align: center;
+    color: #666666;
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
 }
