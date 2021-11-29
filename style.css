@@ -21,7 +21,27 @@
 .game-over {
     text-align: center;
     color: #666666;
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: xx-large;
+    font-size: 3rem;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(./images/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 300px;
 }
