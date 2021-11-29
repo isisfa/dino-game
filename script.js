@@ -45,8 +45,6 @@ function createCactus() {
     let cactusPosition = 600;
     let randomTime = Math.random() * 6000;
 
-    console.log(randomTime)
-
     cactus.classList.add('cactus');
     cactus.style.left = cactusPosition + 'px';
     background.appendChild(cactus);
